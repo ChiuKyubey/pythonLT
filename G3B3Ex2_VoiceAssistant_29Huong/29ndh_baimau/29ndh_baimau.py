@@ -27,9 +27,8 @@ with sr.Microphone() as source:
     print("Bạn đã nói là: {}".format(text1))
 #PHẦN 2: XUẤT RA LỜI NÓI THEO VĂN BẢN ĐÃ NHẬP = Trả lời bằng tiếng Việt : Text => Nói tiếng Việt      
 # ĐỌC CHỮ VIỆT => NÓI RA TIẾNG VIỆT 
-def HoTen(text): 
-    Ten = gTTS(text=text, lang = 'vi') 
+    Ten = gTTS(text=text1, lang = 'vi') 
     filename =os.path.abspath('')+'\sttHoTen.mp3'     
     Ten.save(filename) 
     playsound.playsound(filename)      
-HoTen("số thứ tự 29, họ tên: Leora .Là sinh viên của TRƯỜNG ĐẠI HỌC Sư Phạm Kỹ Thuật Thành phố Hồ Chí Minh.") 
+#HoTen("số thứ tự 29, họ tên: Leora .Là sinh viên của TRƯỜNG ĐẠI HỌC Sư Phạm Kỹ Thuật Thành phố Hồ Chí Minh.") 
